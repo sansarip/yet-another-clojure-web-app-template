@@ -41,9 +41,9 @@ Ring, ring, ring! Your server is expecting you at [http://localhost:3000](http:/
 
 ```
 lein clean
-lein with-profile uberjar uberjar
+lein with-profile uberjar ring uberjar
 ```
 
-That should compile the ClojureScript code first, and then create the standalone jar.
+That should compile the ClojureScript code first, and then create the standalone jar which you can then run with `java -jar target/my-website.jar`
 
 *Good luck, and have fun, you rascal Clojurians!* :beers:
