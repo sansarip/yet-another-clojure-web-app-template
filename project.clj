@@ -8,8 +8,7 @@
   :source-paths ["src/clj" "src/cljs"]
   :test-paths ["test/cljs"]
   :clean-targets ^{:protect false} ["resources/public/cljs-out" "resources/public/js/compiled" "target"]
-  :aliases {"dev"       ["with-profile" "dev" "run" "-m" "shadow.cljs.devtools.cli" "watch" "app"]
-            "prod"      ["with-profile" "prod" "run" "-m" "shadow.cljs.devtools.cli" "release" "app"]
+  :aliases {"prod"      ["with-profile" "prod" "cljsbuild" "once" "min"]
             "fig"       ["trampoline" "run" "-m" "figwheel.main"]
             "fig:build" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]}
 
