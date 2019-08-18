@@ -4,9 +4,8 @@
             [my-website.styles :refer [components]]))
 
 (defcard
-  hello-world
-  "Title description component"
+  sample-component
+  "Here's a sample component that incorporates cljs-css-modules"
   (fn [] (sab/html [:div {:class-name (:container components)}
-                    [:h1 "Hello, World!"]
-                    [:h2 "Second heading"]])))
+                    [:h1 "Hello, World!"]])))
 
