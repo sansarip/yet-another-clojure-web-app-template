@@ -1,3 +1,6 @@
 language: clojure
 lein: lein
+sudo: required
+jdk:
+        - openjdk8
 script: lein with-profile uberjar ring uberjar
