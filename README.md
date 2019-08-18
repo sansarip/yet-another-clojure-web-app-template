@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sansarip/yet-another-clojure-web-app-template.svg?branch=master)](https://travis-ci.org/sansarip/yet-another-clojure-web-app-template)
+
 # What's This?
 
 A template for full-stack Clojure web apps that uses the [Leiningen](https://leiningen.org/) build tool, that's what! :bowtie:
