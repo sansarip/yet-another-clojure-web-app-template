@@ -1,2 +1,5 @@
+os: osx
 language: clojure
+install:
+        brew install clojure
 script: lein with-profile uberjar ring uberjar
