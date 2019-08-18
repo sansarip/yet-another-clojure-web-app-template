@@ -8,11 +8,9 @@ While this project *was* based on the template you get from running `lein new re
 
 **What's Missing?**
 
-While this project claims to be a full-stack Clojure web app template, it lacks basic database configuration/support. If applicable, you'd have to add those libraries yourself based on what database backend you wish to support.
+While this project claims to be a full-stack Clojure web app template, it lacks basic database configuration/support. If applicable, you'd have to add those libraries yourself based on what databases you wish to incorporate.
 
-**Why?**
-
-I made this template as the foundation for my personal website which serves mainly static content, hence why I didn't have a need to persist user data and didn't bake in database backend support.
+Now on to the good stuff...
 
 ## Development Mode
 
