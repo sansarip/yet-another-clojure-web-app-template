@@ -29,8 +29,8 @@
              :main         my-website.server
              :aot          [my-website.server]
              :uberjar-name "my-website.jar"
-             :prep-tasks   ["compile" ["prod"]]}}
-  :uberjar-exclusions [#"devcards\.html"]
+             :prep-tasks   ["compile" ["prod"]]
+             :uberjar-exclusions [#"devcards\.html"]}}
 
   :ring {:handler my-website.handler/app}
 
