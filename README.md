@@ -1,6 +1,6 @@
 # What's This?
 
-A template for full-stack Clojure web apps, that's what! :bowtie:
+A template for full-stack Clojure web apps that uses the [Leiningen](https://leiningen.org/) build tool, that's what! :bowtie:
 
 **How's this Different?**
 
