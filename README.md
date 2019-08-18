@@ -4,7 +4,7 @@ A template for full-stack Clojure web apps that uses the [Leiningen](https://lei
 
 **How's this Different?**
 
-While this project *was* based on the template you get from running `lein new re-frame <project name> +10x +debug +handler +routes +test`, I've spiced it up by adding support for a bunch more things you'd expect in a Clojure projects these days like [Figwheel Main](https://figwheel.org/), [Devcards](https://github.com/bhauman/devcards), [cljs-css-modules](https://github.com/matthieu-beteille/cljs-css-modules), and more! In addition, I've also configured the project so that you get a running app right out of the box - meaning that if you run this project as is, you'll get something (menially and virtually) tangible!
+While this project *was* based on the template you get from running `lein new re-frame <project name> +10x +debug +handler +routes +test`, I've spiced it up by adding support for a bunch more things you'd expect in Clojure projects these days like [Figwheel Main](https://figwheel.org/), [Devcards](https://github.com/bhauman/devcards), [cljs-css-modules](https://github.com/matthieu-beteille/cljs-css-modules), and more! In addition, I've also configured the project so that you get a running app right out of the box - meaning that if you run this project as is, you'll get something (menially and virtually) tangible!
 
 **What's Missing?**
 
