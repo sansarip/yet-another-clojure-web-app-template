@@ -15,7 +15,7 @@ Our pal [Figwheel Main](https://figwheel.org/) or *Figgy Smalls* as I like to ca
 
 Wait a bit, then browse to [http://localhost:9500](http://localhost:9500).
 
-But wait, there's more! I dunno about you, but I love constructing small, reusuable components that then compose the entirety of the site - think lego bricks. What helps with that? [Devcards](https://github.com/bhauman/devcards)!
+But wait, there's more! I dunno about you, but I love constructing small, reusuable components that then compose the entirety of the site like lego bricks. What helps with that? [Devcards](https://github.com/bhauman/devcards)!
 
 You can view your devcards at [http://localhost:9500/devcards.html](http://localhost:9500/devcards.html).
 
