@@ -1,12 +1,13 @@
-os: osx
 language: clojure
 lein: lein
 sudo: required
 jdk:
-        - openjdk8
+  - openjdk8
 branches:
   only:
-  - master
+    - master
 before_install:
-        brew install clojure
-script: lein with-profile uberjar ring uberjar
+  - 'curl -O https://download.clojure.org/install/linux-install-1.10.1.466.sh'
+  - 'chmod +x linux-install-1.10.1.466.sh'
+  - ./linux-install-1.10.1.466.sh
+script: 'lein with-profile uberjar ring uberjar'
