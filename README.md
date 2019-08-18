@@ -1,6 +1,18 @@
 # What's This?
 
-A template for full stack Clojure web apps, that's what!
+A template for full-stack Clojure web apps, that's what! :bowtie:
+
+**How's this Different?**
+
+While this project *was* based on the template you get from running `lein new re-frame <project name> +10x +debug +handler +routes +test`, I've spiced it up by adding support for a bunch more things you'd expect in a Clojure projects these days like [Figwheel Main](https://figwheel.org/), [Devcards](https://github.com/bhauman/devcards), [cljs-css-modules](https://github.com/matthieu-beteille/cljs-css-modules), and more! In addition, I've also configured the project so that you get a running app right out of the box - meaning that if you run this project as is, you'll get something (menially and virtually) tangible!
+
+**What's Missing?**
+
+While this project claims to be a full-stack Clojure web app template, it lacks basic database configuration/support. If applicable, you'd have to add those libraries yourself based on what database backend you wish to support.
+
+**Why?**
+
+I made this template as the foundation for my personal website which serves mainly static content, hence why I didn't have a need to persist user data and didn't bake in database backend support.
 
 ## Development Mode
 
@@ -36,4 +48,4 @@ lein with-profile prod uberjar
 
 That should compile the ClojureScript code first, and then create the standalone jar.
 
-*Good luck, and have fun, you rascal Clojurians!*
+*Good luck, and have fun, you rascal Clojurians!* :beers:
