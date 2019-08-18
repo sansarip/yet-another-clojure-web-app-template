@@ -1,0 +1,20 @@
+^{:open-url         false
+  :css-dirs         ["resources/public/css"]
+  :watch-dirs       ["src/cljs"]
+  :log-file         "log/figwheel-main.log"
+  :log-level        :info
+  :extra-main-files {:devcards {:main my_website.cards}}}
+
+{:main            my_website.core
+ :devcards        true
+ :preloads        [devtools.preload
+                   day8.re-frame-10x.preload]
+ :optimizations   :none
+ :pretty-print    true
+ :source-map      true
+ :asset-path      "/js/compiled/dev"
+ :output-to       "resources/public/js/compiled/app.js"
+ :output-dir      "resources/public/js/compiled/dev"
+ :closure-defines {"re_frame.trace.trace_enabled_QMARK_"        true
+                   "day8.re_frame.tracing.trace_enabled_QMARK_" true
+                   goog.DEBUG                                   true}}

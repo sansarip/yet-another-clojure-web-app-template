@@ -1,0 +1,3 @@
+{:target-dir "resources"
+ :log-file "log/figwheel-main.log"
+ :log-level :info}
