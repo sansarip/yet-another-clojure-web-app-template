@@ -1,6 +1,10 @@
 (ns my-website.styles
-  (:require [cljs-css-modules.macro :refer-macros [defstyle]]))
+  (:require [spade.core :refer [defglobal]]))
 
-(defstyle components
-  [".container" {:background-color "blue"
-                 :font-size 55}])
+;; define global css styles here
+
+(defglobal global-class []
+           ["body" {:font-family "\"Work Sans\", sans-serif"
+                    :color "#131F33"}]
+           [".container" {:background-color "#CCDEFF"
+                          :font-size        55}])
