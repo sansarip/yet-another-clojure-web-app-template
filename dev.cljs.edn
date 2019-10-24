@@ -1,5 +1,4 @@
 ^{:open-url         false
-  :css-dirs         ["resources/public/css"]
   :watch-dirs       ["src/cljs"]
   :log-file         "log/figwheel-main.log"
   :log-level        :info
