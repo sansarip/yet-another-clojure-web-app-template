@@ -1,5 +1,6 @@
 ^{:open-url         false
-  :watch-dirs       ["src/cljs"]
+  :watch-dirs       ["src/cljs" "test/cljs"]
+  :auto-testing     true
   :log-file         "log/figwheel-main.log"
   :log-level        :info
   :extra-main-files {:devcards {:main my_website.cards}}}

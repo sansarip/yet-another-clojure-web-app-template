@@ -1,7 +1,14 @@
 (ns my-website.core-test
-  (:require [cljs.test :refer-macros [deftest testing is]]
-            [my-website.core :as core]))
+  (:require [cljs.test :refer-macros [deftest testing is]]))
+
+;; define tests
 
 (deftest fake-test
   (testing "fake description"
-    (is (= 1 2))))
+    (is (= 1 1))))
+
+;; necessary boilerplate
+
+(enable-console-print!)
+
+(cljs.test/run-tests)

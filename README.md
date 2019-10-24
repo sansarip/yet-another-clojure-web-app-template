@@ -31,6 +31,8 @@ But wait, there's more! I dunno about you, but I love constructing small, reusua
 
 You can view your devcards at [http://localhost:9500/devcards.html](http://localhost:9500/devcards.html).
 
+Want to test your cljs? Visit [http://localhost:9500/figwheel-extra-main/auto-testing](http://localhost:9500/figwheel-extra-main/auto-testing) and see your test turn from red to green!
+
 ### Back-end:
 
 ```

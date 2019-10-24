@@ -2,7 +2,8 @@
   (:require
     [re-frame.core :as re-frame]
     [my-website.subs :as subs]
-    [my-website.styles] ;; global styles
+    ;; global styles
+    [my-website.styles]
     [my-website.views.about.panel :refer [about-panel]]
     [my-website.views.home.panel :refer [home-panel]]))
 
