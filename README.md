@@ -27,9 +27,13 @@ Our pal [Figwheel Main](https://figwheel.org/) or *Figgy Smalls* as I like to ca
 
 Wait a bit, then browse to [http://localhost:9500](http://localhost:9500).
 
+#### Devcards
+
 But wait, there's more! I dunno about you, but I love constructing small, reusuable components that then compose the entirety of the site like lego bricks. What helps with that? [Devcards](https://github.com/bhauman/devcards)!
 
 You can view your devcards at [http://localhost:9500/devcards.html](http://localhost:9500/devcards.html).
+
+#### Testing
 
 Want to test your cljs? Visit [http://localhost:9500/figwheel-extra-main/auto-testing](http://localhost:9500/figwheel-extra-main/auto-testing) and see your test turn from red to green!
 
