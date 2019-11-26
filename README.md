@@ -39,11 +39,7 @@ Want to test your cljs? Visit [http://localhost:9500/figwheel-extra-main/auto-te
 
 ### Back-end:
 
-```
-lein ring server
-```
-
-Ring, ring, ring! Your server is expecting you at [http://localhost:3000](http://localhost:3000)!
+Your backend should be integrated and running already by the power of Figheel Main!
 
 ## Production Build
 
