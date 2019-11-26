@@ -19,6 +19,9 @@
   (reagent/render [views/main-panel]
                   (.getElementById js/document "app")))
 
+(defn ^:after-load re-render []
+  (mount-root))
+
 (defn ^:export init []
   (routes/app-routes)
   (re-frame/dispatch-sync [::events/initialize-db])
