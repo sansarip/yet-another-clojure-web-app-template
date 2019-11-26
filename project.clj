@@ -21,8 +21,7 @@
   :test-paths ["test/cljs"]
   :clean-targets ^{:protect false} ["resources/public/cljs-out" "resources/public/js/compiled" "target"]
   :aliases {"prod"     ["with-profile" "prod" "cljsbuild" "once" "min"]
-            "fig"      ["trampoline" "run" "-m" "figwheel.main"]
-            "fig:prod" ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "prod"]
+            "fig:prod" ["run" "-m" "figwheel.main" "-bo" "prod"]
             "fig:dev"  ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]}
 
   :profiles
