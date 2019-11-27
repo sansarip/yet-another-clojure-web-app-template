@@ -1,4 +1,4 @@
-(ns my-website.core
+(ns ^:figwheel-hooks my-website.core
   (:require
    [reagent.core :as reagent]
    [re-frame.core :as re-frame]
