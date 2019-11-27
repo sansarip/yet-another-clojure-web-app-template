@@ -16,11 +16,9 @@ Now on to the good stuff...
 
 ## Development Mode
 
-### Front-end:
-
 ```
 lein clean
-lein fig:build
+lein fig:dev
 ```
 
 Our pal [Figwheel Main](https://figwheel.org/) or *Figgy Smalls* as I like to call it will spin your application right up for you with auto-refresh capabilties n' all!
@@ -36,10 +34,6 @@ You can view your devcards at [http://localhost:9500/devcards.html](http://local
 #### Testing
 
 Want to test your cljs? Visit [http://localhost:9500/figwheel-extra-main/auto-testing](http://localhost:9500/figwheel-extra-main/auto-testing) and see your test turn from red to green!
-
-### Back-end:
-
-Your backend should be integrated and running already by the power of Figheel Main!
 
 ## Production Build
 
