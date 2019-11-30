@@ -44,4 +44,8 @@ lein with-profile uberjar ring uberjar
 
 That should compile the ClojureScript code first, and then create the standalone jar which you can then run with `java -jar target/my-website.jar`
 
+## Example Projects
+* [gh-repo-list](https://github.com/sansarip/gh-repo-list)
+* [my-website](https://github.com/sansarip/my-website)
+
 *Good luck, and have fun, you rascal Clojurians!* :beers:
