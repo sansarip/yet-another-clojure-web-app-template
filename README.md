@@ -39,7 +39,7 @@ Want to test your cljs? Visit [http://localhost:9500/figwheel-extra-main/auto-te
 
 ```
 lein clean
-lein with-profile uberjar ring uberjar
+lein prod
 ```
 
 That should compile the ClojureScript code first, and then create the standalone jar which you can then run with `java -jar target/my-website.jar`
