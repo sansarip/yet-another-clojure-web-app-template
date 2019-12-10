@@ -1,33 +1,45 @@
 (ns my-website.routes
-  (:require-macros [secretary.core :refer [defroute]])
-  (:import goog.History)
-  (:require
-   [secretary.core :as secretary]
-   [goog.events :as gevents]
-   [goog.history.EventType :as EventType]
-   [re-frame.core :as re-frame]
-   [my-website.events :as events]
-   ))
+  (:require [reitit.frontend :as rf]
+            [reitit.frontend.easy :as rfe]
+            [reitit.coercion.spec :as rss]
+            [re-frame.core :as re-frame]
+            [my-website.events :as events]
+            [my-website.subs :as subs]
+            [my-website.views.home.panel :refer [home-panel]]
+            [my-website.views.about.panel :refer [about-panel]]))
 
-(defn hook-browser-navigation! []
-  (doto (History.)
-    (gevents/listen
-     EventType/NAVIGATE
-     (fn [event]
-       (secretary/dispatch! (.-token event))))
-    (.setEnabled true)))
+(defn href
+  "Return relative url for given route. Url can be used in HTML links."
+  ([k]
+   (href k nil nil))
+  ([k params]
+   (href k params nil))
+  ([k params query]
+   (rfe/href k params query)))
 
-(defn app-routes []
-  (secretary/set-config! :prefix "#")
-  ;; --------------------
-  ;; define routes here
-  (defroute "/" []
-    (re-frame/dispatch [::events/set-active-panel :home-panel])
-    )
+(def routes
+  [["/" {:name :home-panel
+         :view home-panel}]
+   ["about" {:name :about-panel
+             :view about-panel}]])
 
-  (defroute "/about" []
-    (re-frame/dispatch [::events/set-active-panel :about-panel]))
+(defn on-navigate [new-match]
+  (when new-match
+    (re-frame/dispatch [::events/navigated new-match])))
 
+(def router
+  (rf/router
+    routes
+    {:data {:coercion rss/coercion}}))
 
-  ;; --------------------
-  (hook-browser-navigation!))
+(defn init-routes! []
+  (js/console.log "initializing routes")
+  (rfe/start!
+    router
+    on-navigate
+    {:use-fragment true}))
+
+(defn router-component []
+  (let [current-view-fn (-> @(re-frame/subscribe [::subs/current-route]) :data :view)]
+    (when current-view-fn
+      (current-view-fn))))

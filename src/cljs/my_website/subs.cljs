@@ -8,6 +8,7 @@
       (:name db)))
 
 (re-frame/reg-sub
-  ::active-panel
-  (fn [db _]
-      (:active-panel db)))
+  ::current-route
+  (fn [db]
+    (:current-route db)))
+

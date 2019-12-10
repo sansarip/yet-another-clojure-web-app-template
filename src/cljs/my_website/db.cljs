@@ -2,4 +2,4 @@
 
 (def default-db
   {:name "re-frame"
-   :active-panel :home-panel})
+   :current-route :home})
