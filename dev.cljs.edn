@@ -6,7 +6,6 @@
   :extra-main-files {:devcards {:main my_website.cards}}}
 
 {:main            my_website.core
- :ring-handler    my-website.handler/app
  :devcards        true
  :preloads        [devtools.preload
                    day8.re-frame-10x.preload]

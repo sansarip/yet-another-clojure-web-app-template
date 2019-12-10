@@ -1,3 +1,4 @@
-{:target-dir "resources"
- :log-file "log/figwheel-main.log"
- :log-level :info}
+{:target-dir   "resources"
+ :log-file     "log/figwheel-main.log"
+ :ring-handler my-website.handler/app
+ :log-level    :info}
