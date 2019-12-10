@@ -5,7 +5,6 @@
   :dependencies [[binaryage/devtools "0.9.10"]
                  [com.bhauman/figwheel-main "0.2.3"]
                  [com.bhauman/rebel-readline-cljs "0.1.4"]
-                 [compojure "1.6.1"]
                  [devcards "0.2.6"]
                  [metosin/reitit "0.3.10"]
                  [net.dhleong/spade "1.0.3"]
