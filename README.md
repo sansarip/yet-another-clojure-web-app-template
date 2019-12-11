@@ -1,3 +1,4 @@
+[![Clojars Project](https://img.shields.io/clojars/v/yacwat/lein-template.svg)](https://clojars.org/yacwat/lein-template)[![Build Status](https://travis-ci.com/sansarip/yet-another-clojure-web-app-template.svg?branch=master)](https://travis-ci.com/sansarip/yet-another-clojure-web-app-template)
 
 # yacWAT
 
@@ -7,10 +8,14 @@ A Leiningen template for full-stack Clojure web applications with a more modern 
 
 Looking to start a project with [Reitit](https://github.com/metosin/reitit), 
 [test.check](https://github.com/clojure/test.check), [Figwheel Main](https://figwheel.org/), 
-[Devcards](https://github.com/bhauman/devcards), and more fun tools?
+[Devcards](https://github.com/bhauman/devcards), [Re-frame](https://github.com/day8/re-frame) and more fun tools?
 
 Look no further, weary wanderer.
 
 ## Usage
 
 `lein new yacwat <project name>`
+
+## Example Projects
+* [gh-repo-list](https://github.com/sansarip/gh-repo-list)
+* [my-website](https://github.com/sansarip/my-website)
