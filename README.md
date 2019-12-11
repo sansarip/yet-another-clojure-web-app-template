@@ -1,5 +1,5 @@
 
-# YACWAT
+# yacWAT
 
 *Yet Another Clojure Web App Template*
 
