@@ -1,0 +1,4 @@
+{:target-dir   "resources"
+ :log-file     "log/figwheel-main.log"
+ :ring-handler {{name}}.handler/app
+ :log-level    :info}
