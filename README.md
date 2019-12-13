@@ -1,6 +1,6 @@
 [![Clojars Project](https://img.shields.io/clojars/v/yacwat/lein-template.svg)](https://clojars.org/yacwat/lein-template)[![Build Status](https://travis-ci.com/sansarip/yet-another-clojure-web-app-template.svg?branch=master)](https://travis-ci.com/sansarip/yet-another-clojure-web-app-template)
 
-# yacWAT
+# YACWAT
 
 *Yet Another Clojure Web App Template*
 
