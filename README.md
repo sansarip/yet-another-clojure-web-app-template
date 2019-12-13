@@ -14,7 +14,11 @@ Look no further, weary wanderer.
 
 ## Usage
 
-`lein new yacwat <project name>`
+`lein new yacwat <project name> <options>`
+
+### Options
+
+* [semantic-ui-react](https://github.com/cljsjs/packages/tree/master/semantic-ui-react) +semantic-ui
 
 ## Example Projects
 * [gh-repo-list](https://github.com/sansarip/gh-repo-list)

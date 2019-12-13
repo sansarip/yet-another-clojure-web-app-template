@@ -14,6 +14,7 @@
                  [re-frame "0.11.0-rc3"]
                  [reagent "0.9.0-rc3"]
                  [ring "1.7.1"]
+                 {{#semantic-ui?}}[cljsjs/semantic-ui-react "0.88.1-0"]{{/semantic-ui?}}
                  [yogthos/config "1.1.5"]]
   :min-lein-version "2.5.3"
   :source-paths ["src/clj" "src/cljs"]
