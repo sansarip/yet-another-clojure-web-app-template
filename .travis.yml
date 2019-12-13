@@ -10,4 +10,4 @@ before_install:
   - 'curl -O https://download.clojure.org/install/linux-install-1.10.1.466.sh'
   - 'chmod +x linux-install-1.10.1.466.sh'
   - 'sudo ./linux-install-1.10.1.466.sh'
-script: 'lein install && lein new yacwat test-proj && cd test-proj && lein with-profile uberjar ring uberjar'
+script: 'lein install && lein new yacwat test-proj && cd test-proj && lein prod'
