@@ -10,7 +10,6 @@
                  [net.dhleong/spade "1.0.3"]
                  [org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.520"]
-                 [org.clojure/test.check "0.9.0"]
                  [re-frame "0.11.0-rc3"]
                  [reagent "0.9.0-rc3"]
                  [ring "1.7.1"]
@@ -20,7 +19,7 @@
   :source-paths ["src/clj" "src/cljs"]
   :test-paths ["test/cljs"]
   :clean-targets ^{:protect false} ["resources/public/cljs-out" "resources/public/js/compiled" "target"]
-  :aliases {"prod"     ["with-profile" "uberjar" "ring" "uberjar"]
+  :aliases {"prod"     ["ring" "uberjar"]
             "fig:prod" ["run" "-m" "figwheel.main" "-bo" "prod"]
             "fig:dev"  ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]}
 
