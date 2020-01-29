@@ -3,8 +3,8 @@
     [day8.re-frame.tracing :refer-macros [fn-traced]]
     [{{name}}.db :as db]
     [{{name}}.effects :as effects]
-    [re-frame.core :as re-frame]
-    [re-posh.core :as re-posh]
+    [re-frame.core :as re-frame]{{#re-posh?}}
+    [re-posh.core :as re-posh]{{/re-posh?}}
     [reitit.frontend.controllers :as rfc]))
 
 (re-frame/reg-event-db
