@@ -15,7 +15,12 @@
 (re-posh/reg-event-ds
   ::initialize-ds
   (fn-traced [_ _]
-             db/default-ds)){{/re-posh?}}
+             db/default-ds))
+
+(re-frame/reg-event-db
+  ::set-ds
+  (fn-traced [db [_ ds]]
+             (assoc db :ds ds))){{/re-posh?}}
 
 (re-frame/reg-event-fx
   ::navigate
