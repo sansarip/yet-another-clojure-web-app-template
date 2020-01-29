@@ -12,7 +12,7 @@
 (def ds (create-conn)){{/re-posh?}}
 
 (defn dev-setup []
-  (when config/dbug?
+  (when config/debug?
     (enable-console-print!)
     (println "dev mode"){{#re-posh?}}
     (re-frame/dispatch-sync [::events/set-ds ds]){{/re-posh?}})){{#re-posh?}}
