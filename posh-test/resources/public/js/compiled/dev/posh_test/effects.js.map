@@ -1,0 +1,1 @@
+{"version":3,"file":"\/Users\/sansarip\/Dev\/yet-another-clojure-web-app-template\/posh-test\/resources\/public\/js\/compiled\/dev\/posh_test\/effects.js","sources":["effects.cljs"],"lineCount":10,"mappings":";AAAA;;;;AAIA,+BAAA,\/BAACA,+HAEC,WAAKC;AAAL,AACE,OAACC,0BAAMC,gCAAeF","names":["re-frame.core\/reg-fx","route","cljs.core\/apply","reitit.frontend.easy\/push-state"]}

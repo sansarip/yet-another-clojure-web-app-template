@@ -1,0 +1,4 @@
+{:target-dir   "resources"
+ :log-file     "log/figwheel-main.log"
+ :ring-handler posh-test.handler/app
+ :log-level    :info}

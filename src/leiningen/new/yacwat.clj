@@ -10,7 +10,8 @@
   [name & options]
   (let [data {:name         name
               :sanitized    (name-to-path name)
-              :semantic-ui? (some #(= "+semantic-ui" %) options)}]
+              :semantic-ui? (some (partial = "+semantic-ui") options)
+              :re-posh?     (some (partial = "+re-posh") options)}]
     (main/info "Generating fresh 'lein new' yacwat project.")
     (apply ->files
            (cond-> [data]

@@ -1,0 +1,1 @@
+{"version":3,"file":"\/Users\/sansarip\/Dev\/yet-another-clojure-web-app-template\/posh-test\/resources\/public\/js\/compiled\/dev\/posh_test\/subs.js","sources":["subs.cljs"],"lineCount":12,"mappings":";AAAA;;;AAIA,gCAAA,hCAACA,iHAEC,WAAKC;AAAL,AACI,OAAA,mFAAOA;;AAEb,gCAAA,hCAACD,mIAEC,WAAKC;AAAL,AACE,OAAA,qGAAgBA","names":["re-frame.core\/reg-sub","db"]}

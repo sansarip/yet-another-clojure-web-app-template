@@ -1,0 +1,1 @@
+{"version":3,"file":"\/Users\/sansarip\/Dev\/yet-another-clojure-web-app-template\/posh-test\/resources\/public\/js\/compiled\/dev\/devtools\/version.js","sources":["version.cljs"],"lineCount":9,"mappings":";AAAA;;AAGA,AAAKA,mCAAgB;AAErB,uCAAA,vCAAMC;AAAN,AACED","names":["devtools.version\/current-version","devtools.version\/get-current-version"]}

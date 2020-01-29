@@ -1,15 +1,21 @@
 (ns {{name}}.events
   (:require
-    [day8.re-frame.tracing :refer-macros [fn-traced defn-traced]]
+    [day8.re-frame.tracing :refer-macros [fn-traced]]
     [{{name}}.db :as db]
     [{{name}}.effects :as effects]
     [re-frame.core :as re-frame]
+    [re-posh.core :as re-posh]
     [reitit.frontend.controllers :as rfc]))
 
 (re-frame/reg-event-db
   ::initialize-db
   (fn-traced [_ _]
-             db/default-db))
+             db/default-db)){{#re-posh?}}
+
+(re-posh/reg-event-ds
+  ::initialize-ds
+  (fn-traced [_ _]
+             db/default-ds)){{/re-posh?}}
 
 (re-frame/reg-event-fx
   ::navigate

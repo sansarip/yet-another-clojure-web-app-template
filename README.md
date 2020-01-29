@@ -19,6 +19,7 @@ Look no further, weary wanderer.
 ### Options
 
 * [semantic-ui-react](https://github.com/cljsjs/packages/tree/master/semantic-ui-react) +semantic-ui
+* [re-posh](https://github.com/denistakeda/re-posh) +re-posh
 
 ## Example Projects
 * [gh-repo-list](https://github.com/sansarip/gh-repo-list)
