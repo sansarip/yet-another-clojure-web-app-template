@@ -1,13 +1,13 @@
 (ns ^:figwheel-hooks {{name}}.core
   (:require
    [reagent.core :as reagent]
-   [re-frame.core :as re-frame]
-   {{#re-posh?}}[re-posh.core :refer [connect!] :as re-posh]
+   [re-frame.core :as re-frame]{{#re-posh?}}
+   [re-posh.core :refer [connect!] :as re-posh]
    [datascript.core :refer [create-conn]]{{/re-posh?}}
    [{{name}}.events :as events]
    [{{name}}.routes :refer [init-routes!]]
    [{{name}}.views :as views]
-   [{{name}}.config :as config])){{#/re-posh?}}
+   [{{name}}.config :as config])){{#re-posh?}}
 
 (def ds (create-conn)){{/re-posh?}}
 
@@ -15,7 +15,7 @@
   (when config/dbug?
     (enable-console-print!)
     (println "dev mode"){{#re-posh?}}
-    (re-frame/dispatch-sync [::events/set-ds]){{/re-posh?}})){{#/re-posh?}}
+    (re-frame/dispatch-sync [::events/set-ds ds]){{/re-posh?}})){{#re-posh?}}
 
 (defn init-ds []
   (connect! ds)
