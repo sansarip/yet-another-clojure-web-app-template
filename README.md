@@ -24,3 +24,4 @@ Look no further, weary wanderer.
 ## Example Projects
 * [gh-repo-list](https://github.com/sansarip/gh-repo-list)
 * [my-website](https://github.com/sansarip/my-website)
+* [yacwat-re-posh](https://github.com/sansarip/yacwat-re-posh)
