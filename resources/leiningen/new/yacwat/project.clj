@@ -5,8 +5,10 @@
   :dependencies [[binaryage/devtools "0.9.10"]
                  [com.bhauman/figwheel-main "0.2.3"]
                  [com.bhauman/rebel-readline-cljs "0.1.4"]
-                 [devcards "0.2.6"]
-                 [metosin/reitit "0.3.10"]
+                 [metosin/reitit "0.3.10"]{{#pedestal?}}
+                 [metosin/reitit-pedestal "0.3.10"]
+                 [io.pedestal/pedestal.service "0.5.5"]
+                 [io.pedestal/pedestal.jetty "0.5.5"]{{/pedestal?}}
                  [net.dhleong/spade "1.0.3"]
                  [org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.520"]
@@ -19,6 +21,7 @@
                  [yogthos/config "1.1.5"]]
   :min-lein-version "2.5.3"
   :source-paths ["src/clj" "src/cljs"]
+  :main {{name}}.server
   :test-paths ["test/cljs"]
   :clean-targets ^{:protect false} ["resources/public/cljs-out" "resources/public/js/compiled" "target"]
   :aliases {"prod"     ["ring" "uberjar"]
@@ -27,6 +30,7 @@
 
   :profiles
   {:dev     {:dependencies [[binaryage/devtools "0.9.10"]
+                            [devcards "0.2.6"]
                             [com.bhauman/figwheel-main "0.2.3"]
                             [com.bhauman/rebel-readline-cljs "0.1.4"]
                             [day8.re-frame/re-frame-10x "0.4.2"]

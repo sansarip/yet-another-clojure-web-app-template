@@ -6,12 +6,16 @@
 
 (def render (renderer "yacwat"))
 
+(defn is-in? [s c]
+  (some (partial = s) c))
+
 (defn yacwat
   [name & options]
   (let [data {:name         name
               :sanitized    (name-to-path name)
-              :semantic-ui? (some (partial = "+semantic-ui") options)
-              :re-posh?     (some (partial = "+re-posh") options)}]
+              :semantic-ui? (is-in? "+semantic-ui" options)
+              :re-posh?     (is-in? "+re-posh" options)
+              :pedestal?    (is-in? "+pedestal" options)}]
     (main/info "Generating fresh 'lein new' yacwat project.")
     (apply ->files
            (cond-> [data]
