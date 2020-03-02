@@ -12,6 +12,8 @@ Looking to start a project with [Reitit](https://github.com/metosin/reitit),
 
 Look no further, weary wanderer.
 
+![](https://i.gyazo.com/56c6e7d8ca86cd218a654d0d116bdbe9.gif)
+
 ## Usage
 
 `lein new yacwat <project name> <options>`
