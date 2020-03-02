@@ -1,7 +1,7 @@
 (ns {{name}}.db)
 
 (def default-db
-  {:name "re-frame"
+  {:name "{{name}}"
    :current-route :home})
 {{#re-posh?}}
 (def default-ds
