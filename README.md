@@ -12,7 +12,7 @@ Looking to start a project with [Reitit](https://github.com/metosin/reitit),
 
 Look no further, weary wanderer.
 
-![](https://i.gyazo.com/56c6e7d8ca86cd218a654d0d116bdbe9.gif)
+[![Image from Gyazo](https://i.gyazo.com/cb70bbb06f1cca121077e8d29559d961.gif)](https://gyazo.com/cb70bbb06f1cca121077e8d29559d961)
 
 ## Usage
 
