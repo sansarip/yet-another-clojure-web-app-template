@@ -39,13 +39,6 @@
    ; src/cards
    ["src/cljs/{{sanitized}}/cards/components.cljs" (render "components.cljs" data)]
 
-
-   ; src/views/about
-   ["src/cljs/{{sanitized}}/views/about/events.cljs" (render "views/about/events.cljs" data)]
-   ["src/cljs/{{sanitized}}/views/about/panel.cljs" (render "views/about/panel.cljs" data)]
-   ["src/cljs/{{sanitized}}/views/about/styles.cljs" (render "views/about/styles.cljs" data)]
-   ["src/cljs/{{sanitized}}/views/about/subs.cljs" (render "views/about/subs.cljs" data)]
-
    ; src/views/home
    ["src/cljs/{{sanitized}}/views/home/events.cljs" (render "views/home/events.cljs" data)]
    ["src/cljs/{{sanitized}}/views/home/panel.cljs" (render "views/home/panel.cljs" data)]

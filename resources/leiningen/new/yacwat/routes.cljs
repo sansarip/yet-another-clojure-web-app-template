@@ -5,8 +5,7 @@
             [re-frame.core :as re-frame]
             [{{name}}.events :as events]
             [{{name}}.subs :as subs]
-            [{{name}}.views.home.panel :refer [home-panel]]
-            [{{name}}.views.about.panel :refer [about-panel]]))
+            [{{name}}.views.home.panel :refer [home-panel]]))
 
 (defn href
   "Return relative url for given route. Url can be used in HTML links."
@@ -19,9 +18,7 @@
 
 (def routes
   [["/" {:name :home-panel
-         :view home-panel}]
-   ["about" {:name :about-panel
-             :view about-panel}]])
+         :view home-panel}]])
 
 (defn on-navigate [new-match]
   (when new-match
