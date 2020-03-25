@@ -25,6 +25,7 @@ Look no further, weary wanderer.
 * [pedestal](https://github.com/pedestal/pedestal) +pedestal
 
 ## Example Projects
+* [yacwat-simple](https://github.com/sansarip/yacwat-simple)
 * [gh-repo-list](https://github.com/sansarip/gh-repo-list)
 * [my-website](https://github.com/sansarip/my-website)
 * [yacwat-re-posh](https://github.com/sansarip/yacwat-re-posh)
