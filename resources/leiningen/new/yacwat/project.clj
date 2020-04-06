@@ -9,7 +9,7 @@
                  [metosin/reitit-pedestal "0.3.10"]
                  [io.pedestal/pedestal.service "0.5.5"]
                  [io.pedestal/pedestal.jetty "0.5.5"]{{/pedestal?}}
-                 [net.dhleong/spade "1.0.3"]
+                 [net.dhleong/spade "1.0.4"]
                  [org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.520"]
                  [re-frame "0.11.0"]{{#re-posh?}}
